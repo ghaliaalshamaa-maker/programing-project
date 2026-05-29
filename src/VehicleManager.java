@@ -25,7 +25,7 @@ public class VehicleManager {
                 System.out.println("["+plateNum+"] has been deleted");
                 return;
             }
-            
+    
         }
 
     }
