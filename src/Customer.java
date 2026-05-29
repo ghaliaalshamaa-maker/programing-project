@@ -1,8 +1,8 @@
 public abstract class Customer {
-    protected String customerId;
-    protected String name;
-    protected String address;
-    protected String Phone;
+    private String customerId;
+    private String name;
+    private String address;
+    private String Phone;
 
     
 
@@ -13,21 +13,39 @@ public abstract class Customer {
         this.Phone = phone;
     }
 
+    
     public String getCustomerId() {
         return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getAddress() {
         return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPhone() {
         return Phone;
     }
+
+    public void setPhone(String phone) {
+        Phone = phone;
+    }
+
 
     @Override
     public String toString() {

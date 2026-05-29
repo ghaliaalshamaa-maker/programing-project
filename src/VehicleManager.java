@@ -8,19 +8,19 @@ public class VehicleManager {
 
     public void addVehicle(Vehicle newVehicle){
         for(Vehicle v:vehiclesList){
-            if(v.getPliatNumber().equalsIgnoreCase(newVehicle.getPliatNumber())){
-                System.out.println("[Error]"+newVehicle.getPliatNumber()+"already exists!");
+            if(v.getPlateNumber().equalsIgnoreCase(newVehicle.getPlateNumber())){
+                System.out.println("[Error]"+newVehicle.getPlateNumber()+"already exists!");
                 return;
             }
-            vehiclesList.add(newVehicle);
-            System.out.println("Success added");
         }
+        vehiclesList.add(newVehicle);
+            System.out.println("Success added");
     }
     
 
     public void deleteVehicle(String plateNum){
         for(int i=0;i< vehiclesList.size();i++){
-            if(vehiclesList.get(i).getPliatNumber().equalsIgnoreCase(plateNum)){
+            if(vehiclesList.get(i).getPlateNumber().equalsIgnoreCase(plateNum)){
                 vehiclesList.remove(i);
                 System.out.println("["+plateNum+"] has been deleted");
                 return;
@@ -32,7 +32,7 @@ public class VehicleManager {
 
     public Vehicle searchVehicle(String plateNum){
         for(Vehicle v : vehiclesList){
-            if(v.getPliatNumber().equalsIgnoreCase(plateNum)){
+            if(v.getPlateNumber().equalsIgnoreCase(plateNum)){
                 return v;
             }
            
@@ -49,11 +49,11 @@ public class VehicleManager {
             System.out.println("the system is empty");
             return;
         }
-        System.out.println("=====================");
+
         for(Vehicle v : vehiclesList){
             System.out.println(v);
         }
-        System.out.println("======================");
+  
     }
 
 
@@ -65,7 +65,6 @@ public class VehicleManager {
             return;
         }
 
-        System.out.println("===================================");
         boolean Ava = false; 
         
         for (Vehicle v : vehiclesList) {
@@ -78,7 +77,7 @@ public class VehicleManager {
         if (!Ava) {
             System.out.println("Sorry, all vehicles are currently rented out.");
         }
-        System.out.println("===========================================");
+    
     }
 }
 

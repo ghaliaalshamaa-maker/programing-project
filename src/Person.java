@@ -1,12 +1,30 @@
 public class Person extends Customer{
-    int number;
-    Date birthDate;
+    private int number;
+    private Date birthDate;
 
     public Person(String numberId, String name, String address, String numberPhone, int number, int d,int m ,int y) {
         super(numberId, name, address, numberPhone);
         this.number = number;
         birthDate =new Date(d,m,y);
     }
+    
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
 
     @Override
     public String toString() {

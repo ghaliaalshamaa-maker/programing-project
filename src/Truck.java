@@ -11,10 +11,23 @@ public class Truck extends Vehicle{
         this.refrigerated = refrigerated;
     }
 
+    public double getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(double capacity) {
+        this.capacity = capacity;
+    }
+
     public boolean isRefrigerated() {
         return refrigerated;
     }
 
+    public void setRefrigerated(boolean refrigerated) {
+        this.refrigerated = refrigerated;
+    }
+
+    
     @Override
     public String toString() {
         return super.toString()+"Truck [capacity=" + capacity + ", refrigerated=" + (refrigerated? "Yes": "No")+ "]";

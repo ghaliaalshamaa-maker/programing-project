@@ -8,13 +8,23 @@ public class Corporation extends Customer {
         this.discount = discount;
     }
 
+    
     public String getTaxNumber() {
         return taxNumber;
+    }
+
+    public void setTaxNumber(String taxNumber) {
+        this.taxNumber = taxNumber;
     }
 
     public double getDiscount() {
         return discount;
     }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
+
 
     @Override
     public String toString() {

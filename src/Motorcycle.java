@@ -1,21 +1,37 @@
 public class Motorcycle extends Vehicle{
-    private int enginenolpCapacity;
+    private int engineCapacity;
     private boolean hasSidecar;
 
     
 
-    public Motorcycle(String pliatNumber, String brand, String model, double dailyRate, boolean isAvailable,int enginenolpCapacity, boolean hasSidecar) {
+    public Motorcycle(String plateNumber, String brand, String model, double dailyRate, boolean isAvailable,int enginenolpCapacity, boolean hasSidecar) {
             
-        super(pliatNumber, brand, model, dailyRate, isAvailable);
-        this.enginenolpCapacity = enginenolpCapacity;
+        super(plateNumber, brand, model, dailyRate, isAvailable);
+        this.engineCapacity = enginenolpCapacity;
+        this.hasSidecar = hasSidecar;
+    }
+
+    
+    public int getEngineCapacity() {
+        return engineCapacity;
+    }
+
+    public void setEngineCapacity(int enginenolpCapacity) {
+        this.engineCapacity = enginenolpCapacity;
+    }
+
+    public boolean isHasSidecar() {
+        return hasSidecar;
+    }
+
+    public void setHasSidecar(boolean hasSidecar) {
         this.hasSidecar = hasSidecar;
     }
 
 
-
     @Override
     public String toString() {
-        return super.toString()+"Motorcycle [enginenolpCapacity=" + enginenolpCapacity + ", hasSidecar=" + hasSidecar + "]";
+        return super.toString()+"Motorcycle [enginenolpCapacity=" + engineCapacity + ", hasSidecar=" + hasSidecar + "]";
     }
 
 
