@@ -1,8 +1,8 @@
 public class Corporation extends Customer {
     private String taxNumber;
-    private double discount;
+    private int discount;
 
-    public Corporation(String customerId, String name, String address, String phone, String taxNumber, double discount) {
+    public Corporation(String customerId, String name, String address, String phone, String taxNumber, int discount) {
         super(customerId, name, address, phone);
         this.taxNumber = taxNumber;
         this.discount = discount;
@@ -21,14 +21,14 @@ public class Corporation extends Customer {
         return discount;
     }
 
-    public void setDiscount(double discount) {
+    public void setDiscount(int discount) {
         this.discount = discount;
     }
 
 
     @Override
     public String toString() {
-        return super.toString()+"Corporation [taxNumber=" + taxNumber + ", discount=" + (discount*100) +"%"+"]";
+        return super.toString()+"Corporation [taxNumber=" + taxNumber + ", discount=" + discount +"%"+"]";
     }
 
     

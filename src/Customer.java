@@ -4,7 +4,7 @@ public abstract class Customer {
     private String address;
     private String Phone;
 
-    
+
 
     public Customer(String customerId, String name, String address, String phone) {
         this.customerId = customerId;
@@ -53,11 +53,5 @@ public abstract class Customer {
                
     }
 
-    
-
-    
-
-    
-
-
+ 
 }

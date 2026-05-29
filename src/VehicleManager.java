@@ -38,15 +38,13 @@ public class VehicleManager {
            
         }
         return null;
-         
-        
-        
+   
     }
 
 
     public void display(){
         if(vehiclesList.isEmpty()){
-            System.out.println("the system is empty");
+            System.out.println("there are no vehicles ");
             return;
         }
 
@@ -61,7 +59,7 @@ public class VehicleManager {
 
     public void displayAvailable() {
         if (vehiclesList.isEmpty()) {
-            System.out.println("the system is empty");
+            System.out.println("there are no vehicles");
             return;
         }
 
@@ -70,7 +68,7 @@ public class VehicleManager {
         for (Vehicle v : vehiclesList) {
             if (v.isAvailable()) { 
                 System.out.println(v);
-                Ava = true;
+                Ava=true;
             }
         }
 
