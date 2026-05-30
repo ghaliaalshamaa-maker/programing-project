@@ -19,15 +19,17 @@ public class VehicleManager {
     
 
     public void deleteVehicle(String plateNum){
+       
         for(int i=0;i< vehiclesList.size();i++){
             if(vehiclesList.get(i).getPlateNumber().equalsIgnoreCase(plateNum)){
                 vehiclesList.remove(i);
                 System.out.println("["+plateNum+"] has been deleted");
                 return;
             }
-    
+            
         }
-
+         System.out.println("Vehicle not found");
+        
     }
 
     public Vehicle searchVehicle(String plateNum){
@@ -55,8 +57,6 @@ public class VehicleManager {
     }
 
 
-
-
     public void displayAvailable() {
         if (vehiclesList.isEmpty()) {
             System.out.println("there are no vehicles");
@@ -78,8 +78,3 @@ public class VehicleManager {
     
     }
 }
-
-    
-
-
-

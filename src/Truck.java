@@ -4,8 +4,7 @@ public class Truck extends Vehicle{
 
     
 
-    public Truck(String pliatNumber, String brand, String model, double dailyRate, boolean isAvailable, double capacity,
-            boolean refrigerated) {
+    public Truck(String pliatNumber, String brand, String model, double dailyRate, boolean isAvailable, double capacity, boolean refrigerated) {    
         super(pliatNumber, brand, model, dailyRate, isAvailable);
         this.capacity = capacity;
         this.refrigerated = refrigerated;

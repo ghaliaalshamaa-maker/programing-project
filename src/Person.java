@@ -2,10 +2,10 @@ public class Person extends Customer{
     private int number;
     private Date birthDate;
 
-    public Person(String numberId, String name, String address, String numberPhone, int number, int d,int m ,int y) {
+    public Person(String numberId, String name, String address, String numberPhone, int number, int y,int m ,int d) {
         super(numberId, name, address, numberPhone);
         this.number = number;
-        birthDate =new Date(d,m,y);
+        birthDate =new Date(y,m,d);
     }
     
 
