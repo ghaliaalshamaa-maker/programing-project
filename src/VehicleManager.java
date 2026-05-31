@@ -9,7 +9,7 @@ public class VehicleManager {
     public void addVehicle(Vehicle newVehicle){
         for(Vehicle v:vehiclesList){
             if(v.getPlateNumber().equalsIgnoreCase(newVehicle.getPlateNumber())){
-                System.out.println("[Error]"+newVehicle.getPlateNumber()+"already exists!");
+                System.out.println("[Error] "+newVehicle.getPlateNumber()+" already exists!");
                 return;
             }
         }

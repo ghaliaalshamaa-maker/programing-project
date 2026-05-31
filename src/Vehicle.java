@@ -53,7 +53,7 @@ public abstract class Vehicle {
         this.isAvailable = isAvailable;
     }
 
-    @Override
+
     public String toString() {
         return "pliatNumber=" + plateNumber + ", brand=" + brand + ", model=" + model + ", dailyRate=" + dailyRate + ", isAvailable=" + (isAvailable? "Yes":"No") ;
                
