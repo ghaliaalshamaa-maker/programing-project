@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class VehicleManager {
+public class  VehicleManager {
     private ArrayList<Vehicle> vehiclesList;
 
     public VehicleManager() {
