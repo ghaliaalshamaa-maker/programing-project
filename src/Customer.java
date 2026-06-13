@@ -1,10 +1,8 @@
-public class Customer {
+public abstract class Customer {
     private String customerId;
     private String name;
     private String address;
     private String Phone;
-
-
 
     public Customer(String customerId, String name, String address, String phone) {
         this.customerId = customerId;
@@ -13,7 +11,8 @@ public class Customer {
         this.Phone = phone;
     }
 
-    
+    public abstract double getDiscountRate();
+
     public String getCustomerId() {
         return customerId;
     }
@@ -46,12 +45,7 @@ public class Customer {
         Phone = phone;
     }
 
-
-   
     public String toString() {
-        return "customerId=" + customerId + ", name=" + name + ", address=" + address + ", Phone=" + Phone ;
-               
+        return "customerId=" + customerId + ", name=" + name + ", address=" + address + ", Phone=" + Phone;
     }
-
- 
 }

@@ -12,7 +12,12 @@ public abstract class Vehicle {
         this.dailyRate = dailyRate;
         this.isAvailable = isAvailable;
     }
-   
+
+    public abstract double   claculateCost(int day);
+
+
+
+
     public String getPlateNumber() {
         return plateNumber;
     }
@@ -54,9 +59,10 @@ public abstract class Vehicle {
     }
 
 
+
     public String toString() {
         return "pliatNumber=" + plateNumber + ", brand=" + brand + ", model=" + model + ", dailyRate=" + dailyRate + ", isAvailable=" + (isAvailable? "Yes":"No") ;
-               
+
     }
 
 }
